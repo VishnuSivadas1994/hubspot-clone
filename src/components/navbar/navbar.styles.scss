@@ -1,0 +1,50 @@
+.header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    background-color: rgba($color: #053742, $alpha: 1.0);
+    
+
+    .logo-container{
+        height: 100%;
+        width: 70px;
+        padding: 25px;
+
+    }
+
+    .options1{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        
+    }
+
+    .options2{
+        width: fit-content;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .option {
+        font-size: small;
+        padding: 10px 10px;
+        cursor: pointer;
+        color: rgba($color: #a2dbfa, $alpha: 1.0);
+        text-decoration: none;
+      }
+
+    .tool-divider{
+        width: 0px;
+        border-left: 1px solid rgba($color: #39a2db, $alpha: 1.0);
+        margin: 13px 10px 14px;
+        height: 30px !important;
+    }
+
+    
+}
