@@ -31,13 +31,18 @@
         align-items: center;
         justify-content: flex-end;
     }
+    
     .option {
         font-size: small;
-        padding: 10px 10px;
+        padding: 15px 10px;
         cursor: pointer;
         color: rgba($color: #a2dbfa, $alpha: 1.0);
         text-decoration: none;
-      }
+    }
+    .option:hover{
+        background-color: rgba($color: #03232b, $alpha: 0.6);
+
+    }
 
     .tool-divider{
         width: 0px;
