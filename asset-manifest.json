@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hubspot-clone/static/css/main.ecb31ca5.chunk.css",
+    "main.js": "/hubspot-clone/static/js/main.4ecdedca.chunk.js",
+    "main.js.map": "/hubspot-clone/static/js/main.4ecdedca.chunk.js.map",
+    "runtime-main.js": "/hubspot-clone/static/js/runtime-main.bb50414b.js",
+    "runtime-main.js.map": "/hubspot-clone/static/js/runtime-main.bb50414b.js.map",
+    "static/js/2.3dcd61a5.chunk.js": "/hubspot-clone/static/js/2.3dcd61a5.chunk.js",
+    "static/js/2.3dcd61a5.chunk.js.map": "/hubspot-clone/static/js/2.3dcd61a5.chunk.js.map",
+    "static/js/3.81d57224.chunk.js": "/hubspot-clone/static/js/3.81d57224.chunk.js",
+    "static/js/3.81d57224.chunk.js.map": "/hubspot-clone/static/js/3.81d57224.chunk.js.map",
+    "index.html": "/hubspot-clone/index.html",
+    "static/css/main.ecb31ca5.chunk.css.map": "/hubspot-clone/static/css/main.ecb31ca5.chunk.css.map",
+    "static/js/2.3dcd61a5.chunk.js.LICENSE.txt": "/hubspot-clone/static/js/2.3dcd61a5.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/hubspot-clone/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bb50414b.js",
+    "static/js/2.3dcd61a5.chunk.js",
+    "static/css/main.ecb31ca5.chunk.css",
+    "static/js/main.4ecdedca.chunk.js"
+  ]
+}
