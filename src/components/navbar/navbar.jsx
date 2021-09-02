@@ -10,54 +10,54 @@ const NavBar = () => {
 
     return (
         <div className="header">
-            <div className="options1">
+            <div className="leftNavItems">
                 <NavLink className="logo-container" to="/">
                     <Logo/>
                 </NavLink>
 
-                <NavLink className="option" to="/contacts">
+                <NavLink className="navItem" to="/contacts">
                     Contacts
                 </NavLink>
 
-                <NavLink className="option" to="/conversations">
+                <NavLink className="navItem" to="/conversations">
                     Conversations
                 </NavLink>
 
-                <NavLink className="option" to="/marketing">
+                <NavLink className="navItem" to="/marketing">
                     Marketing
                 </NavLink>
 
-                <NavLink className="option" to="/sales">
+                <NavLink className="navItem" to="/sales">
                     Sales
                 </NavLink>
 
-                <NavLink className="option" to="/service">
+                <NavLink className="navItem" to="/service">
                     Service
                 </NavLink>
 
-                <NavLink className="option" to="/automation">
+                <NavLink className="navItem" to="/automation">
                     Automation
                 </NavLink>
 
-                <NavLink className="option" to="/reports">
+                <NavLink className="navItem" to="/reports">
                     Reports
                 </NavLink>
             </div>
 
-            <div className="options2">
-                <NavLink className="option" to="/marketplace">
+            <div className="rightNavItems">
+                <NavLink className="navItem" to="/marketplace">
                     Marketplace
                 </NavLink>
 
-                <NavLink className="option" to="/settings">
+                <NavLink className="navItem" to="/settings">
                     Settings
                 </NavLink>
 
-                <NavLink className="option" to="/notifications">
+                <NavLink className="navItem" to="/notifications">
                     Notifications
                 </NavLink>
                 <span className="tool-divider"></span>
-                <NavLink className="option" to="/account">
+                <NavLink className="navItem" to="/account">
                     Account
                 </NavLink>
             </div>

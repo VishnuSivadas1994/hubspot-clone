@@ -1,10 +1,18 @@
+$primaryColor: #053742;
+$primaryHover: #03232b;
+$secondaryColor:#39a2db;
+$tertiaryColor:#a2dbfa;
+$quaternaryColor:#e8f0f2;
+
+
+
 .header{
     height: 50px;
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-    background-color: rgba($color: #053742, $alpha: 1.0);
+    background-color: rgba($color: $primaryColor, $alpha: 1.0);
     
 
     .logo-container{
@@ -14,7 +22,7 @@
 
     }
 
-    .options1{
+    .leftNavItems{
         width: fit-content;
         height: 100%;
         display: flex;
@@ -24,32 +32,33 @@
         
     }
 
-    .options2{
+    .rightNavItems{
         width: fit-content;
         height: 100%;
         display: flex;
         align-items: center;
         justify-content: flex-end;
+        .tool-divider{
+            width: 0px;
+            border-left: 1px solid rgba($color: $tertiaryColor, $alpha: 0.5);
+            margin: 13px 10px 14px;
+            height: 30px !important;
+        }
     }
     
-    .option {
+    .navItem {
         font-size: small;
         padding: 15px 10px;
         cursor: pointer;
-        color: rgba($color: #a2dbfa, $alpha: 1.0);
+        color: rgba($color: $tertiaryColor, $alpha: 1.0);
         text-decoration: none;
-    }
-    .option:hover{
-        background-color: rgba($color: #03232b, $alpha: 0.6);
+        &:hover{
+            background-color: rgba($color: $primaryHover, $alpha: 0.6);
 
+        }
     }
 
-    .tool-divider{
-        width: 0px;
-        border-left: 1px solid rgba($color: #39a2db, $alpha: 1.0);
-        margin: 13px 10px 14px;
-        height: 30px !important;
-    }
+    
 
     
 }
