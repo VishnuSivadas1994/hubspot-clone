@@ -1,0 +1,19 @@
+$primaryHover: #03232b;
+
+
+
+
+.dropdown{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid black;
+    background: rgba($color: $primaryHover, $alpha: 0.8);
+    top: 50px;
+    left: 120px;
+    z-index: 5;
+    display: block;
+    text-align: left;
+}

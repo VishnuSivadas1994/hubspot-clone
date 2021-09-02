@@ -1,9 +1,11 @@
 import './App.css';
 
 //importing router modules
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Router } from 'react-router-dom';
 
 //import components
+
+
 import NavBar from './components/navbar/navbar';
 import Homepage from './components/homepage/homepage';
 import Contact from './components/contact/contact';
@@ -14,6 +16,8 @@ import Service from './components/service/service';
 import Automation from './components/automation/automation';
 import Reports from './components/reports/reports';
 import Account from './components/account/account';
+
+// import NavBar from './components/CustomNavBar';
 
 
 function App() {
@@ -32,14 +36,12 @@ function App() {
         <Route component={Reports} path='/reports' />
         <Route component={Account} path='/account' />
 
-
-
-
-
-
-
       </Switch>
     </BrowserRouter>
+    // <BrowserRouter>
+    //   <NavBar/>
+
+    // </BrowserRouter>
   );
 }
 
