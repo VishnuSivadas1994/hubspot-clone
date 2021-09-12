@@ -5,7 +5,14 @@ const Conversation = () => {
 
     return (
         <div>
-            Conversation Dataa
+            <ul>
+                <li>Inbox</li>
+                <li>Chatflow</li>
+                <li>Snippets</li>
+                <li>Templates</li>
+
+
+            </ul>
         </div>
     )
 }

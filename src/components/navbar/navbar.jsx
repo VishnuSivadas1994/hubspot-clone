@@ -1,40 +1,22 @@
 import React, { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import OutsideClickHandler from 'react-outside-click-handler';
+
 import './navbar.styles.scss';
 
 import Contact from '../contact/contact';
 
 //import logo
 import { ReactComponent as Logo } from '../../logo.svg';
+import Conversation from '../conversation/conversation';
 
 
 const NavBar = () => {
 
-    const [dropdown, setDropdown] = useState(false);
     ///////
-    const [contacts,setContacts]=useState(false);
-    const [conversation,setConversation]=useState(false);
+    const [open, setOpen] = useState(false);
+    const toggle = () => setOpen(!open);
 
-
-    const openMenu = (e) => {
-        console.log(e.target.id)
-
-        switch(e.target.id){
-            case ("#contact"):
-                setContacts(!contacts);
-                break;
-            case ("#conversation"):
-                setConversation(!conversation);
-                break;
-            default:
-                break;
-        }
-
-    }
-
-    const openContact=(props)=>{
-        setContacts(!contacts)
-    }
 
 
 
@@ -46,38 +28,46 @@ const NavBar = () => {
                     <Logo />
                 </NavLink>
 
-                <NavLink id="#contact" className="navItem" to="#" onClick={openMenu}>
+                <NavLink id="#contact" className="navItem" to="#" onMouseOver={() => toggle(!open)} onMouseLeave={() => toggle(!open)}>
                     Contacts
+                {
+                    open && (
+                        <Contact />
+                    )
+                }
                 </NavLink>
-                {contacts&&<Contact />}
 
 
-                <NavLink id="#conversation" className="navItem" to="#" onClick={openMenu}>
+                <NavLink id="#conversation" className="navItem" to="#" onMouseOver={() => toggle(!open)} onMouseLeave={() => toggle(!open)}>
                     Conversations
+                {
+                    open && (
+                        <Conversation />
+                    )
+                }
                 </NavLink>
-                {conversation && <Contact />}
                 {/* TEST CODE HERE */}
 
 
                 {/* TEST CODE HERE */}
 
-                <NavLink className="navItem" to="#" onClick={openMenu}>
+                <NavLink className="navItem" to="#" >
                     Marketing
                 </NavLink>
 
-                <NavLink className="navItem" to="#" onClick={openMenu}>
+                <NavLink className="navItem" to="#" >
                     Sales
                 </NavLink>
 
-                <NavLink className="navItem" to="#" onClick={openMenu}>
+                <NavLink className="navItem" to="#" >
                     Service
                 </NavLink>
 
-                <NavLink className="navItem" to="#" onClick={openMenu}>
+                <NavLink className="navItem" to="#" >
                     Automation
                 </NavLink>
 
-                <NavLink className="navItem" to="#" onClick={openMenu}>
+                <NavLink className="navItem" to="#" >
                     Reports
                 </NavLink>
             </div>
@@ -95,13 +85,12 @@ const NavBar = () => {
                     Notifications
                 </NavLink>
                 <span className="tool-divider"></span>
-                <NavLink className="navItem" to="#" onClick={openMenu}>
+                <NavLink className="navItem" to="#" >
                     Account
                 </NavLink>
             </div>
         </div>
     )
 }
-
 
 export default NavBar;
