@@ -4,7 +4,7 @@ const Conversation = () => {
 
 
     return (
-        <div>
+        <div className="dropdown">
             <ul>
                 <li>Inbox</li>
                 <li>Chatflow</li>

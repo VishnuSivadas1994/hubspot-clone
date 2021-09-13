@@ -1,24 +1,20 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import OutsideClickHandler from 'react-outside-click-handler';
 
 import './navbar.styles.scss';
 
-import Contact from '../contact/contact';
 
 //import logo
 import { ReactComponent as Logo } from '../../logo.svg';
+
+import Contact from '../contact/contact';
 import Conversation from '../conversation/conversation';
+import Marketing from '../marketing/marketing';
 
 
 const NavBar = () => {
 
     ///////
-    const [open, setOpen] = useState(false);
-    const toggle = () => setOpen(!open);
-
-
-
 
 
     return (
@@ -28,31 +24,26 @@ const NavBar = () => {
                     <Logo />
                 </NavLink>
 
-                <NavLink id="#contact" className="navItem" to="#" onMouseOver={() => toggle(!open)} onMouseLeave={() => toggle(!open)}>
+                <NavLink className="navItem" to="#">
+
                     Contacts
-                {
-                    open && (
+                <div className="navItemDropdown">
                         <Contact />
-                    )
-                }
+                    </div>
                 </NavLink>
 
-
-                <NavLink id="#conversation" className="navItem" to="#" onMouseOver={() => toggle(!open)} onMouseLeave={() => toggle(!open)}>
+                <NavLink className="navItem" to="#">
                     Conversations
-                {
-                    open && (
+                    <div className="navItemDropdown">
                         <Conversation />
-                    )
-                }
+                    </div>
                 </NavLink>
-                {/* TEST CODE HERE */}
-
-
-                {/* TEST CODE HERE */}
 
                 <NavLink className="navItem" to="#" >
                     Marketing
+                    <div className="navItemDropdown">
+                        <Marketing />
+                    </div>
                 </NavLink>
 
                 <NavLink className="navItem" to="#" >

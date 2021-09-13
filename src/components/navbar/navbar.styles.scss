@@ -10,6 +10,7 @@ $quaternaryColor:#e8f0f2;
     height: 50px;
     width: 100%;
     display: flex;
+    flex-flow: row nowrap;
     justify-content: space-between;
     margin-bottom: 25px;
     background-color: rgba($color: $primaryColor, $alpha: 1.0);
@@ -26,6 +27,9 @@ $quaternaryColor:#e8f0f2;
         width: fit-content;
         height: 100%;
         display: flex;
+
+        flex-flow: row nowrap;
+
         align-items: center;
         justify-content: flex-start;
 
@@ -36,6 +40,9 @@ $quaternaryColor:#e8f0f2;
         width: fit-content;
         height: 100%;
         display: flex;
+
+        flex-flow: row nowrap;
+
         align-items: center;
         justify-content: flex-end;
         .tool-divider{
@@ -47,28 +54,35 @@ $quaternaryColor:#e8f0f2;
     }
     
     .navItem {
+        align-items: center;
         font-size: small;
-        padding: 15px 10px;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100%;
+        padding: 0 10px;
         cursor: pointer;
+        position: relative;
+
         color: rgba($color: $tertiaryColor, $alpha: 1.0);
         text-decoration: none;
         &:hover{
             background-color: rgba($color: $primaryHover, $alpha: 0.6);
 
         }
+        &:hover .navItemDropdown{
+            display: block;
+        }
+        
     }
 
-    .visible{
-        visibility: visible;
+    .navItemDropdown{
+        position: absolute;
+        left: 0;
+        top: 100%;
+        display: none;
+        margin: 0 0;
     }
-    .hidden{
-        visibility: hidden;
 
-    }
-
-    ul{
-        list-style-type: none;
-    }
 
     
 
